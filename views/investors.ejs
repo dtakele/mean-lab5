@@ -20,13 +20,13 @@
 
   <%
   
-   for (var i = 0; i < data.length; i++) { %>
+   data.forEach(function(d) { %>
     <tr>
-      <td><%= data[i].first %></td>
-      <td><%= data[i].last %></td>
-      <td><%= data[i].year %></td>
+      <td><%= d.first %></td>
+      <td><%= d.last %></td>
+      <td><%= d.year %></td>
     </tr>    
-  <% } %>
+  <% }) %>
 </table>
 
 

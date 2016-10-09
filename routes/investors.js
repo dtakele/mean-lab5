@@ -13,7 +13,7 @@ fs.readFile(file, 'utf8', function (err, data) {
     return;
   }
 
-  list = JSON.parse(data);
+  list = data;// JSON.parse(data);
 });
 
 /* GET investors listing. */
