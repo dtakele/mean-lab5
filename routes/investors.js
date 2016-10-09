@@ -1,7 +1,7 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router({caseSensitive: true, strict: true});
 var fs = require("fs");
-router.caseSensitive;
+//router.caseSensitive;
 
 var file = './data.json';
 
